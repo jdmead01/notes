@@ -175,13 +175,14 @@ res.redirect('/');
 ##### models.js
 Take a look at the provided wireframe and outline what you need in order to make your database work properly within the scope of the project. 
 
-If you identify more than one model (1 to many relationship ensure the database that is nested within the main model
+If you identify more than one schema (1 to many relationship) ensure the schema that is nested within the main schema appears ABOVE the exported schema 
 ```javascript
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/task_db');
-
-var TaskSchema = new mongoose.Schema({
+var FeaturesSchema = new mongoose.Schema({
+	feature: {tyoe
+var WidgetSchema = new mongoose.Schema({
 	title: { type: String, required: true, minlength: 2},
 	description: { type: String, maxlength: 255, default: ""},
 	completed: { type: Boolean, default: false}
@@ -212,7 +213,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY2NTQ0MDYzLC0xNzg2NDkwNjg4LDEyNT
+eyJoaXN0b3J5IjpbNzY1MTkyMDcwLC0xNzg2NDkwNjg4LDEyNT
 g3NDgyMzEsLTI5NTY1NzkyNyw3MTUzNTA0NjcsNzgyMDI1MjE0
 LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUxLDYxMT
 U4NDY1NF19
