@@ -25,22 +25,11 @@ code . should open project up in VS Code
 const  express  =  require("express")
 const  bp  =  require("body-parser")
 const  path  =  require("path")
-const  session  =  require("express-session")
-const  flash  =  require("express-flash")
 var  app  =  express()
 
 app.use(bp.json());
 app.use(express.static( __dirname +  '/public/dist/public' ));
-app.use(session({
-	secret: 'quotes',
-	resave: false,
-	saveUninitialized: true,
-	cookie: { maxAge: 60000 }
-}))
 
-app.use(flash());
-app.set('views', path.join(__dirname, './views'))
-app.set('view engine', 'ejs')
 require('./routes')(app)
 
 app.listen(8000, (err)=>{
@@ -220,7 +209,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Nzk0MjIwODgsOTY3NDMxOTk2LC0yMD
+eyJoaXN0b3J5IjpbLTE1NzcyNDY4MzgsOTY3NDMxOTk2LC0yMD
 g3MjE3OTgyLC0xNjUwMzIzNDYwLC0xNzg2NDkwNjg4LDEyNTg3
 NDgyMzEsLTI5NTY1NzkyNyw3MTUzNTA0NjcsNzgyMDI1MjE0LC
 0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUxLDYxMTU4
