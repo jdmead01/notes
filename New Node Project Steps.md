@@ -30,12 +30,13 @@ var  app  =  express()
 app.use(bp.json());
 app.use(express.static( __dirname +  '/public/dist/public' ));
 app.use(session({
-secret: 'quotes',
-resave: false,
-saveUninitialized: true,
-cookie: { maxAge: 60000 }
+	secret: 'quotes',
+	resave: false,
+	saveUninitialized: true,
+	cookie: { maxAge: 60000 }
 }))
-app.use(flash())
+
+app.use(flash());
 app.set('views', path.join(__dirname, './views'))
 app.set('view engine', 'ejs')
 require('./routes')(app)
@@ -205,7 +206,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODkxNDU4NjAsLTI5NTY1NzkyNyw3MT
-UzNTA0NjcsNzgyMDI1MjE0LC0zMzk2OTc5MDEsLTIwMDkzMDgz
-NjMsMjA0NjE3NDUxLDYxMTU4NDY1NF19
+eyJoaXN0b3J5IjpbMjE0NzQ3NTk0NSwtMjk1NjU3OTI3LDcxNT
+M1MDQ2Nyw3ODIwMjUyMTQsLTMzOTY5NzkwMSwtMjAwOTMwODM2
+MywyMDQ2MTc0NTEsNjExNTg0NjU0XX0=
 -->
