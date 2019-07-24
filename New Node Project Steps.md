@@ -68,39 +68,21 @@ console.log("listening on port 8000...")
 ##### create controller.js
 ```javascript
 const  Task  =  require("./models");
-
 const  bodyParser  =  require('body-parser');
-
 var  moment  =  require('moment');
-
   
-
 module.exports  = {
-
-// GET: Retrieve all Tasks
-
-home: (req,res)=>{
-
-console.log("in Home route")
-
-Task.find({}, function(err, data) {
-
-if(err){
-
-console.log("home Returned error", err);
-
-res.json({message: "Error", error: err});
-
-}
-
-else {
-
-console.log("Data: ");
-
-console.log(data);
-
-res.json(data); //message: "Success", data:
-
+	// GET: Retrieve all Tasks
+	home: (req,res)=>{
+		console.log("in Home route")
+		Task.find({}, function(err, data) {
+			if(err){
+				console.log("home Returned error", err);
+				res.json({message: "Error", error: err});
+			}else {
+				console.log("Data: ");
+				console.log(data);
+				res.json(data); //message: "Success", data:
 }
 })
 },
@@ -238,7 +220,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMDE1NDA2Miw3MTUzNTA0NjcsNzgyMD
+eyJoaXN0b3J5IjpbMTM5MTE0MzMxOCw3MTUzNTA0NjcsNzgyMD
 I1MjE0LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUx
 LDYxMTU4NDY1NF19
 -->
