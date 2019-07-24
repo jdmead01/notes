@@ -40,6 +40,23 @@ app.listen(8000, (err)=>{
 	}
 })
 ```
+##### routes.js
+```javascript
+const controller = require("./controller")
+
+module.exports = function(app){
+    app.get('/api/authors', controller.authors)
+    app.get('/api/authors/:id', controller.author)
+    app.post('/api/authors', controller.create)
+    app.put('/api/authors/:id', controller.update)
+    app.delete('/api/authors/:id', controller.delete)
+    app.all("*", controller.all) // Typing into the nav bar and hitting enter or making the browser refresh will trigger the Express routes first and Angular routes second.
+}
+// this route will be triggered if any of the routes above did not match
+app.all("*", (req,res,next) => {
+  res.sendFile(path.resolve("./public/dist/public/index.html"))
+});
+```
 ##### create controller.js
 ```javascript
 const  Widget  =  require("./models");
@@ -208,9 +225,9 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5Mzc4MzA1Miw5Njc0MzE5OTYsLTIwOD
-cyMTc5ODIsLTE2NTAzMjM0NjAsLTE3ODY0OTA2ODgsMTI1ODc0
-ODIzMSwtMjk1NjU3OTI3LDcxNTM1MDQ2Nyw3ODIwMjUyMTQsLT
-MzOTY5NzkwMSwtMjAwOTMwODM2MywyMDQ2MTc0NTEsNjExNTg0
-NjU0XX0=
+eyJoaXN0b3J5IjpbLTEyNjA2MDk4NDAsMTE5Mzc4MzA1Miw5Nj
+c0MzE5OTYsLTIwODcyMTc5ODIsLTE2NTAzMjM0NjAsLTE3ODY0
+OTA2ODgsMTI1ODc0ODIzMSwtMjk1NjU3OTI3LDcxNTM1MDQ2Ny
+w3ODIwMjUyMTQsLTMzOTY5NzkwMSwtMjAwOTMwODM2MywyMDQ2
+MTc0NTEsNjExNTg0NjU0XX0=
 -->
