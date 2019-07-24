@@ -10,6 +10,7 @@ code .
 ```
 ##### create server.js
 ```javascript
+/// if you're only using angular all you need is body parser express 
 const express = require("express")
 const bp = require("body-parser")
 const path = require("path")
@@ -107,5 +108,5 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkxODczMTY0XX0=
+eyJoaXN0b3J5IjpbNjExNTg0NjU0XX0=
 -->
