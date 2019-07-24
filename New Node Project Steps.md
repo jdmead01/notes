@@ -172,6 +172,8 @@ res.redirect('/');
 }
 ```
 
+ - [ ] temp_data is data that will be automatically generated. Now you can go to VS Code within the controller.js file and change all instances of 'Task' to 'Widget'
+
 ##### models.js
 Take a look at the provided wireframe and outline what you need in order to make your database work properly within the scope of the project. 
 
@@ -218,8 +220,8 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MTc0MzEyMiwtMjA4NzIxNzk4MiwtMT
-Y1MDMyMzQ2MCwtMTc4NjQ5MDY4OCwxMjU4NzQ4MjMxLC0yOTU2
-NTc5MjcsNzE1MzUwNDY3LDc4MjAyNTIxNCwtMzM5Njk3OTAxLC
-0yMDA5MzA4MzYzLDIwNDYxNzQ1MSw2MTE1ODQ2NTRdfQ==
+eyJoaXN0b3J5IjpbOTY3NDMxOTk2LC0yMDg3MjE3OTgyLC0xNj
+UwMzIzNDYwLC0xNzg2NDkwNjg4LDEyNTg3NDgyMzEsLTI5NTY1
+NzkyNyw3MTUzNTA0NjcsNzgyMDI1MjE0LC0zMzk2OTc5MDEsLT
+IwMDkzMDgzNjMsMjA0NjE3NDUxLDYxMTU4NDY1NF19
 -->
