@@ -152,79 +152,39 @@ getTasksFromService(){
 <a  href="#"  style="float:right">Link</a>
 
 </div>
-
-  
-
 <div  class="row">
-
 <div  class="leftcolumn">
-
 <div  class="card">
-
 <h2>Lets Eat!</h2>
-
 <h5>current Date</h5>
-
 <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
-
 <table>
-
-<caption>Statement Summary</caption>
-
+<caption>Something Table</caption>
 <thead>
-
 <tr>
-
 <th  scope="col">Restaurant</th>
-
 <th  scope="col">Cuisine</th>
-
 <th  scope="col">Actions Available</th>
-
 </tr>
-
 </thead>
-
-{{ getRestaurantsFromService | json}}
-
 <tbody>
-
 <tr>
-
 <td  data-label="Account">{{restaurant.name}}</td>
-
 <td  data-label="Due Date">04/01/2016</td>
-
 <td  data-label="Amount">$1,190</td>
-
 </tr>
-
 </tbody>
-
 </table>
-
-  
-
 </div>
-
 </div>
-
 <div  class="rightcolumn">
-
 <div  class="card">
-
 <h2>Restaurant Name</h2>
-
 <div  class="fakeimg"  style="height:100px;">Image</div>
-
 <p>Review</p>
-
 </div>
-
 <div  class="card">
-
 <h3>Popular Restaurants</h3>
-
 <div  class="fakeimg"><p>Image</p></div>
 <div  class="fakeimg"><p>Image</p></div>
 <div  class="fakeimg"><p>Image</p></div>
@@ -244,6 +204,6 @@ getTasksFromService(){
 <button  (click)="onButtonClickParams(5, 'hello')">Click me!</button>
 <button  (click)="onButtonClickEvent($event)">Click me!</button>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMxMTEyNTk3LC03NjQ1NjE5NTYsMjA1MT
+eyJoaXN0b3J5IjpbNTM3NTk2MzIzLC03NjQ1NjE5NTYsMjA1MT
 QzOTE1N119
 -->
