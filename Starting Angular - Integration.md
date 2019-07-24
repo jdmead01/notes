@@ -74,7 +74,7 @@ import { HttpService } from './http.service';
 })
 
 export class AppComponent implements OnInit {
-	title = 'TITLE OF PROJECT app.com';
+	title = 'TITLE OF PROJECT app.component.ts';
 	num: number;
 	randNum: number;
 	str: string;
@@ -82,5 +82,5 @@ export class AppComponent implements OnInit {
 	snacks: string[];
 	loggedIn: boolean;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0ODg5NTQyNSwyMDUxNDM5MTU3XX0=
+eyJoaXN0b3J5IjpbLTc2NDU2MTk1NiwyMDUxNDM5MTU3XX0=
 -->
