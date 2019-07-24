@@ -213,6 +213,9 @@ module.exports = Widget;
 sudo mongod
 mongo
 ```
+#### Run Nodemon
+```Terminal
+
 **Use Postman To check if the routes work**
 
  - app.get('/api/widgets', controller.widgets)
@@ -234,9 +237,9 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNDU1MDk2NCwtMTI2MDYwOTg0MCwxMT
-kzNzgzMDUyLDk2NzQzMTk5NiwtMjA4NzIxNzk4MiwtMTY1MDMy
-MzQ2MCwtMTc4NjQ5MDY4OCwxMjU4NzQ4MjMxLC0yOTU2NTc5Mj
-csNzE1MzUwNDY3LDc4MjAyNTIxNCwtMzM5Njk3OTAxLC0yMDA5
-MzA4MzYzLDIwNDYxNzQ1MSw2MTE1ODQ2NTRdfQ==
+eyJoaXN0b3J5IjpbLTEzNDgyNTAxOTEsLTEyNjA2MDk4NDAsMT
+E5Mzc4MzA1Miw5Njc0MzE5OTYsLTIwODcyMTc5ODIsLTE2NTAz
+MjM0NjAsLTE3ODY0OTA2ODgsMTI1ODc0ODIzMSwtMjk1NjU3OT
+I3LDcxNTM1MDQ2Nyw3ODIwMjUyMTQsLTMzOTY5NzkwMSwtMjAw
+OTMwODM2MywyMDQ2MTc0NTEsNjExNTg0NjU0XX0=
 -->
