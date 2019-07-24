@@ -66,6 +66,21 @@ getTasks(){
 ```javascript
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from './http.service';
+
+@Component({
+	selector: 'app-root',
+	templateUrl: './app.component.html',
+	styleUrls: ['./app.component.css']
+})
+
+export class AppComponent implements OnInit {
+	title = 'TITLE OF PROJECT app.com';
+	num: number;
+	randNum: number;
+	str: string;
+	first_name: string;
+	snacks: string[];
+	loggedIn: boolean;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NTQwNzMxMywyMDUxNDM5MTU3XX0=
+eyJoaXN0b3J5IjpbMjA0ODg5NTQyNSwyMDUxNDM5MTU3XX0=
 -->
