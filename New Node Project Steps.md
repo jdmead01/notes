@@ -196,7 +196,7 @@ var WidgetSchema = new mongoose.Schema({
 mongoose.model('Widget', WidgetSchema);
 var Widget = mongoose.model('Widget')
 
-module.exports = Task;
+module.exports = Widget;
 ```
 
  - [ ] Ensure you are referencing the correct Database in the mongoose.connect portion of your models.js. mongoose.connect('mongodb://localhost/**task_db**');
@@ -218,8 +218,8 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MjY2Nzc3MywtMTY1MDMyMzQ2MCwtMT
-c4NjQ5MDY4OCwxMjU4NzQ4MjMxLC0yOTU2NTc5MjcsNzE1MzUw
-NDY3LDc4MjAyNTIxNCwtMzM5Njk3OTAxLC0yMDA5MzA4MzYzLD
-IwNDYxNzQ1MSw2MTE1ODQ2NTRdfQ==
+eyJoaXN0b3J5IjpbLTIwODcyMTc5ODIsLTE2NTAzMjM0NjAsLT
+E3ODY0OTA2ODgsMTI1ODc0ODIzMSwtMjk1NjU3OTI3LDcxNTM1
+MDQ2Nyw3ODIwMjUyMTQsLTMzOTY5NzkwMSwtMjAwOTMwODM2My
+wyMDQ2MTc0NTEsNjExNTg0NjU0XX0=
 -->
