@@ -582,9 +582,11 @@ nodemon server.js
 ```
 **Run Angular Server **
 Navigate to the angular folder 'public'
-
+```terminal
+ng build --watch
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2OTMyMjk4NSwtNzY0NTYxOTU2LDIwNT
-E0MzkxNTddfQ==
+eyJoaXN0b3J5IjpbMzAwOTUxNzU3LC03NjQ1NjE5NTYsMjA1MT
+QzOTE1N119
 -->
