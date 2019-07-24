@@ -214,8 +214,10 @@ sudo mongod
 mongo
 ```
 #### Run Nodemon
+navigate to the project root folder 
 ```Terminal
-
+nodemon server.js
+```
 **Use Postman To check if the routes work**
 
  - app.get('/api/widgets', controller.widgets)
@@ -237,9 +239,9 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDgyNTAxOTEsLTEyNjA2MDk4NDAsMT
-E5Mzc4MzA1Miw5Njc0MzE5OTYsLTIwODcyMTc5ODIsLTE2NTAz
-MjM0NjAsLTE3ODY0OTA2ODgsMTI1ODc0ODIzMSwtMjk1NjU3OT
-I3LDcxNTM1MDQ2Nyw3ODIwMjUyMTQsLTMzOTY5NzkwMSwtMjAw
-OTMwODM2MywyMDQ2MTc0NTEsNjExNTg0NjU0XX0=
+eyJoaXN0b3J5IjpbNjU3MTkxNzk1LC0xMjYwNjA5ODQwLDExOT
+M3ODMwNTIsOTY3NDMxOTk2LC0yMDg3MjE3OTgyLC0xNjUwMzIz
+NDYwLC0xNzg2NDkwNjg4LDEyNTg3NDgyMzEsLTI5NTY1NzkyNy
+w3MTUzNTA0NjcsNzgyMDI1MjE0LC0zMzk2OTc5MDEsLTIwMDkz
+MDgzNjMsMjA0NjE3NDUxLDYxMTU4NDY1NF19
 -->
