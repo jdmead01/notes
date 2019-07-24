@@ -81,6 +81,26 @@ export class AppComponent implements OnInit {
 	first_name: string;
 	snacks: string[];
 	loggedIn: boolean;
+	
+constructor(private _httpService: HttpService){}
+
+ngOnInit(){
+
+	this.getTasksFromService();
+
+	this.num = 7;
+
+	this.randNum = Math.floor( (Math.random() * 2 ) + 1);
+
+	this.str = 'Hello Angular Developer!';
+
+	this.first_name = 'Alpha';
+
+	this.snacks = ["vanilla latte with skim milk", "brushed suede", "cookie"];
+	this.loggedIn = true;
+
+}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NDU2MTk1NiwyMDUxNDM5MTU3XX0=
+eyJoaXN0b3J5IjpbLTE5NzMzODI2MzYsLTc2NDU2MTk1NiwyMD
+UxNDM5MTU3XX0=
 -->
