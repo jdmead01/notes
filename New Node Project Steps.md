@@ -11,35 +11,59 @@ code .
 ##### create server.js
 ```javascript
 /// if you're only using angular all you need is body parser express 
-const express = require("express")
-const bp = require("body-parser")
-const path = require("path")
-const session = require("express-session")
-const flash = require("express-flash")
-var app = express()
+const  express  =  require("express")
 
-app.use(bp.urlencoded({extended: true}))
-app.use(express.static(path.join(__dirname, './static')))
+const  bp  =  require("body-parser")
+
+const  path  =  require("path")
+
+const  session  =  require("express-session")
+
+const  flash  =  require("express-flash")
+
+var  app  =  express()
+
+  
+
+app.use(bp.json());
+
+app.use(express.static( __dirname +  '/public/dist/public' ));
+
 app.use(session({
-    secret: 'quotes',
-    resave: false,
-    saveUninitialized: true,
-    cookie: { maxAge: 60000 }
+
+secret: 'quotes',
+
+resave: false,
+
+saveUninitialized: true,
+
+cookie: { maxAge: 60000 }
+
 }))
+
 app.use(flash())
 
-app.set('views', path.join(__dirname, './views'))
-app.set('view engine', 'ejs')
   
+
+app.set('views', path.join(__dirname, './views'))
+
+app.set('view engine', 'ejs')
+
 require('./routes')(app)
 
+  
+
 app.listen(8000, (err)=>{
-    if (err){
-        console.log(err)
-    } else {
-        console.log("listening on port 8000...")
-    }
-})
+
+if (err){
+
+console.log(err)
+
+} else {
+
+console.log("listening on port 8000...")
+
+}
 ```
 ##### create controller.js
 ```javascript
@@ -346,6 +370,6 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzOTY5NzkwMSwtMjAwOTMwODM2MywyMD
-Q2MTc0NTEsNjExNTg0NjU0XX0=
+eyJoaXN0b3J5IjpbNzgyMDI1MjE0LC0zMzk2OTc5MDEsLTIwMD
+kzMDgzNjMsMjA0NjE3NDUxLDYxMTU4NDY1NF19
 -->
