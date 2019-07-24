@@ -373,13 +373,13 @@ nodemon server.js
 
  - [ ] Navigate to the Angular folder you created 'public'
 
-Navigate to the angular folder 'public'
+Navigate to the angular folder 'public' and type in the terminal:
 
 ```terminal
 ng build --watch
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1NDE1NDUwOCwtMjAyNDgyNDExMCwzMD
-A5NTE3NTcsLTc2NDU2MTk1NiwyMDUxNDM5MTU3XX0=
+eyJoaXN0b3J5IjpbMjY3NzgyMTcxLC0yMDI0ODI0MTEwLDMwMD
+k1MTc1NywtNzY0NTYxOTU2LDIwNTE0MzkxNTddfQ==
 -->
