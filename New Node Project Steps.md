@@ -189,7 +189,7 @@ var Task = mongoose.model('Task')
 module.exports = Task;
 ```
 
- - [ ] Ensure you are referencing the correct Database in the mongoose.connect portion of your models.js
+ - [ ] Ensure you are referencing the correct Database in the mongoose.connect portion of your models.js. mongoose.connect('mongodb://localhost/**task_db**');
 
 #### Mongo
 ```console
@@ -208,7 +208,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg0NTc4NjQsLTI5NTY1NzkyNyw3MTUzNT
-A0NjcsNzgyMDI1MjE0LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMs
-MjA0NjE3NDUxLDYxMTU4NDY1NF19
+eyJoaXN0b3J5IjpbMTI1ODc0ODIzMSwtMjk1NjU3OTI3LDcxNT
+M1MDQ2Nyw3ODIwMjUyMTQsLTMzOTY5NzkwMSwtMjAwOTMwODM2
+MywyMDQ2MTc0NTEsNjExNTg0NjU0XX0=
 -->
