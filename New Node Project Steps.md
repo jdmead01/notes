@@ -213,6 +213,9 @@ module.exports = Widget;
 sudo mongod
 mongo
 ```
+**Use Postman To check if the routes work**
+
+
 #### project tree
 .
 ├── controller.js
@@ -225,9 +228,9 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjA2MDk4NDAsMTE5Mzc4MzA1Miw5Nj
-c0MzE5OTYsLTIwODcyMTc5ODIsLTE2NTAzMjM0NjAsLTE3ODY0
-OTA2ODgsMTI1ODc0ODIzMSwtMjk1NjU3OTI3LDcxNTM1MDQ2Ny
-w3ODIwMjUyMTQsLTMzOTY5NzkwMSwtMjAwOTMwODM2MywyMDQ2
-MTc0NTEsNjExNTg0NjU0XX0=
+eyJoaXN0b3J5IjpbLTIwMDM3OTYxODcsLTEyNjA2MDk4NDAsMT
+E5Mzc4MzA1Miw5Njc0MzE5OTYsLTIwODcyMTc5ODIsLTE2NTAz
+MjM0NjAsLTE3ODY0OTA2ODgsMTI1ODc0ODIzMSwtMjk1NjU3OT
+I3LDcxNTM1MDQ2Nyw3ODIwMjUyMTQsLTMzOTY5NzkwMSwtMjAw
+OTMwODM2MywyMDQ2MTc0NTEsNjExNTg0NjU0XX0=
 -->
