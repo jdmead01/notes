@@ -306,6 +306,7 @@ app.post('/create/', controller.create)
 app.get('/get/:id/', [controller.id](http://controller.id/))
 
 app.put('/update/:id/', controller.update)
+// only use app.put with one schema if you have an embedded schema use app.patch
 
 app.delete('/destroy/:id/', controller.delete)
 
@@ -345,6 +346,6 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDkzMDgzNjMsMjA0NjE3NDUxLDYxMT
-U4NDY1NF19
+eyJoaXN0b3J5IjpbLTMzOTY5NzkwMSwtMjAwOTMwODM2MywyMD
+Q2MTc0NTEsNjExNTg0NjU0XX0=
 -->
