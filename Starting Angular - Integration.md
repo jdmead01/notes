@@ -52,19 +52,20 @@ getTasks(){
 
 	// // our http response is an Observable, store it in a variable
 
-	// let tempObservable = this._http.get('/tasks');
+	let tempObservable = this._http.get('/tasks');
 
 	// // subscribe to the Observable and provide the code we would like to do with our data from the response
 
-	// tempObservable.subscribe(data => console.log("Got our tasks!", data));
+	tempObservable.subscribe(data => console.log("Got our tasks!", data));
 
 	return this._http.get('/tasks');
-
+	}
 }
-
-  
-
-}
+```
+**app.components.ts**
+```javascript
+import { Component, OnInit } from '@angular/core';
+import { HttpService } from './http.service';
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4OTEzMTU1NywyMDUxNDM5MTU3XX0=
+eyJoaXN0b3J5IjpbMTI0NTQwNzMxMywyMDUxNDM5MTU3XX0=
 -->
