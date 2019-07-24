@@ -14,32 +14,19 @@ cd public
 ```javascript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { HttpClient } from '@angular/common/http';
-
 import { HttpService } from './http.service';
-
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppComponent } from './app.component';
 
-  
-
 @NgModule({
-
 declarations: [
-
-AppComponent
-
+	AppComponent
 ],
 
 imports: [
-
-BrowserModule,
-
-HttpClientModule
-
-],
+	BrowserModule,
+	HttpClientModule],
 
 providers: [HttpService],
 
@@ -50,5 +37,5 @@ bootstrap: [AppComponent]
 export class AppModule { }
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNDcwMDQ0MywyMDUxNDM5MTU3XX0=
+eyJoaXN0b3J5IjpbLTE2OTAzNjU2MDUsMjA1MTQzOTE1N119
 -->
