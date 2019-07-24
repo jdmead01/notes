@@ -96,31 +96,31 @@ ngOnInit(){
 
 tasks = [];
 getTasksFromService(){
-// this._httpService.getTasks();
-let observable = this._httpService.getTasks();
-observable.subscribe(data => {
-console.log("Got our tasks!", data);
-// In this example, the array of tasks is assigned to the key 'tasks' in the data object.
-// This may be different for you, depending on how you set up your Task API.
+	// this._httpService.getTasks();
+	let observable = this._httpService.getTasks();
+	observable.subscribe(data => {
+		console.log("Got our tasks!", data);
+		// In this example, the array of tasks is assigned to the key 'tasks' in the data object.
+		// This may be different for you, depending on how you set up your Task API.
+		this.tasks = data['tasks'];
+	});
+}
 
-this.tasks = data['tasks'];
-});
-}
 onButtonClick(): void {
-console.log(`Click event is working`);
+	console.log(`Click event is working`);
 }
+
 onButtonClickParam(num: Number): void {
-console.log(`Click event is working with num param: ${num}`);
+	console.log(`Click event is working with num param: ${num}`);
 }
 onButtonClickParams(num: Number, str: String): void {
-console.log(`Click event is working with num param: ${num} and str param: ${str}`);
+	console.log(`Click event is working with num param: ${num} and str param: ${str}`);
 }
 onButtonClickEvent(event: any): void {
-console.log(`Click event is working with event: ${event}`);
-
-}
+	console.log(`Click event is working with event: ${event}`);
+	}
 }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTM4NzMwNzksLTc2NDU2MTk1NiwyMD
+eyJoaXN0b3J5IjpbLTExMzAwNzU4NzksLTc2NDU2MTk1NiwyMD
 UxNDM5MTU3XX0=
 -->
