@@ -203,118 +203,55 @@ body {
 	}
 /* Header/Blog Title */
 .header {
-
-padding: 30px;
-text-align: center;
-background: white;
+	padding: 30px;
+	text-align: center;
+	background: white;
 }
-
-  
-
 .header  h1 {
-
-font-size: 50px;
-
+	font-size: 50px;
 }
-
-  
-
 /* Style the top navigation bar */
-
 .topnav {
-
-overflow: hidden;
-
-background-color: #333;
-
+	overflow: hidden;
+	background-color: #333;
 }
-
-  
-
 /* Style the topnav links */
-
 .topnav  a {
-
 float: left;
-
 display: block;
-
 color: #f2f2f2;
-
 text-align: center;
-
 padding: 14px  16px;
-
 text-decoration: none;
-
 }
-
-  
-
 /* Change color on hover */
-
 .topnav  a:hover {
-
 background-color: #ddd;
-
 color: black;
-
 }
-
-  
-
 /* Create two unequal columns that floats next to each other */
-
 /* Left column */
-
 .leftcolumn {
-
 float: left;
-
 width: 75%;
-
 }
-
-  
-
 /* Right column */
-
 .rightcolumn {
-
 float: left;
-
 width: 25%;
-
 background-color: #f1f1f1;
-
 padding-left: 20px;
-
 }
-
-  
-
 /* Fake image */
-
 .fakeimg {
-
 background-image: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fgffoodservice.org%2Fwp-content%2Fuploads%2F2015%2F03%2Frestaurant-e1456862749354.jpg&f=1');
-
 height: 100px;
-
 background-color: #aaa;
-
 width: 100%;
-
 padding: 20px;
-
 }
-
-  
-
 /* Add a card effect for articles */
-
 .card {
-
 background-color: white;
 padding: 20px;
 margin-top: 20px;
@@ -441,6 +378,6 @@ ng build --watch
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNzU2NzcwMSwtMjAyNDgyNDExMCwzMD
+eyJoaXN0b3J5IjpbMTg5MDE5OTg4NSwtMjAyNDgyNDExMCwzMD
 A5NTE3NTcsLTc2NDU2MTk1NiwyMDUxNDM5MTU3XX0=
 -->
