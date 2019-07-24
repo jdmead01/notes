@@ -121,25 +121,24 @@ module.exports  = {
 				console.log("Data: ");
 				console.log(data);
 				res.json({message: "Success", data: data});
-}
-})
-},
-update: (req, res)=>{
-// PUT: Update a Task by ID
-console.log("in Update route");
-console.log("req.params.id: ");
-console.log(req.params.id);
-console.log("req.body: ");
-console.log(req.body);
-Task.findOneAndUpdate(req.params.id, req.body, function(err, data){
-if(err){
-console.log("new Returned error", err);
-res.json({message: "Error", error: err});
-}
-else {
-console.log("Data: ");
-console.log(data);
-res.json({message: "Success", data: data});
+			}
+		})
+	},
+	update: (req, res)=>{
+		// PUT: Update a Task by ID
+		console.log("in Update route");
+		console.log("req.params.id: ");
+		console.log(req.params.id);
+		console.log("req.body: ");
+		console.log(req.body);
+		Task.findOneAndUpdate(req.params.id, req.body, function(err, data){
+			if(err){
+				console.log("new Returned error", err);
+				res.json({message: "Error", error: err});
+			} else {
+				console.log("Data: ");
+				console.log(data);
+				res.json({message: "Success", data: data});
 }
 })
 },
@@ -218,7 +217,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MzA3NjAxNiw3MTUzNTA0NjcsNzgyMD
+eyJoaXN0b3J5IjpbMTQ0OTc1NjM1NCw3MTUzNTA0NjcsNzgyMD
 I1MjE0LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUx
 LDYxMTU4NDY1NF19
 -->
