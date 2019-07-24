@@ -152,23 +152,25 @@ module.exports  = {
 				console.log("remove Returned error", err);
 				res.json({message: "Error", error: err});
 			}else {
-					console.log("Data: ");
-					console.log(data);
-					res.json({message: "Success", data: data});
-}
-})
-},
-generate: (re,res)=>{
-console.log("in GENERATE data")
-// Task.tasks.drop()
-// Pandas.collection.drop()
-Task.collection.drop();
-var  task  = [
-{ 'title': "Think about stuff more thoroughly", 'description': "Too much stuff"},
-{ 'title': "Deck of Cards", 'description': "Building methods"},
-{ 'title': "Coding in Angular", 'description': "Wheeeeeeeee"},
-{ 'title': "White Boarding MergeSort", 'description': "Now that is Fun!"}
-];
+				console.log("Data: ");
+				console.log(data);
+				res.json({message: "Success", data: data});
+			}
+		})
+	},
+	generate: (re,res)=>{
+		console.log("in GENERATE data")
+		// Task.tasks.drop()
+		// Pandas.collection.drop()
+		Task.collection.drop();
+		
+		var  task  = [
+			{ 'title': "Think about stuff more thoroughly", 'description': "Too much stuff"},
+			{ 'title': "Deck of Cards", 'description': "Building methods"},
+			{ 'title': "Coding in Angular", 'description': "Wheeeeeeeee"},
+			{ 'title': "White Boarding MergeSort", 'description': "Now that is Fun!"}
+		];
+		
 Task.create(task, onInsert);
 function  onInsert(err, docs) {
 if (err) {
@@ -216,7 +218,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNTA3MDg4NCw3MTUzNTA0NjcsNzgyMD
-I1MjE0LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUx
-LDYxMTU4NDY1NF19
+eyJoaXN0b3J5IjpbNDkxNjk2MzgwLDcxNTM1MDQ2Nyw3ODIwMj
+UyMTQsLTMzOTY5NzkwMSwtMjAwOTMwODM2MywyMDQ2MTc0NTEs
+NjExNTg0NjU0XX0=
 -->
