@@ -217,44 +217,44 @@ body {
 }
 /* Style the topnav links */
 .topnav  a {
-float: left;
-display: block;
-color: #f2f2f2;
-text-align: center;
-padding: 14px  16px;
-text-decoration: none;
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px  16px;
+	text-decoration: none;
 }
 /* Change color on hover */
 .topnav  a:hover {
-background-color: #ddd;
-color: black;
+	background-color: #ddd;
+	color: black;
 }
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {
-float: left;
-width: 75%;
+	float: left;
+	width: 75%;
 }
 /* Right column */
 .rightcolumn {
-float: left;
-width: 25%;
-background-color: #f1f1f1;
-padding-left: 20px;
+	float: left;
+	width: 25%;
+	background-color: #f1f1f1;
+	padding-left: 20px;
 }
 /* Fake image */
 .fakeimg {
-background-image: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fgffoodservice.org%2Fwp-content%2Fuploads%2F2015%2F03%2Frestaurant-e1456862749354.jpg&f=1');
-height: 100px;
-background-color: #aaa;
-width: 100%;
-padding: 20px;
+	background-image: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fgffoodservice.org%2Fwp-content%2Fuploads%2F2015%2F03%2Frestaurant-e1456862749354.jpg&f=1');
+	height: 100px;
+	background-color: #aaa;
+	width: 100%;
+	padding: 20px;
 }
 /* Add a card effect for articles */
 .card {
-background-color: white;
-padding: 20px;
-margin-top: 20px;
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
 }
 /* Clear floats after the columns */
 .row:after {
@@ -264,84 +264,84 @@ margin-top: 20px;
 	}
 /* Footer */
 .footer {
-padding: 20px;
-text-align: center;
-background: #ddd;
-margin-top: 20px;
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	margin-top: 20px;
 } 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media  screen  and (max-width: 800px) {
 .leftcolumn, .rightcolumn {
-width: 100%;
-padding: 0;
+	width: 100%;
+	padding: 0;
 }
 }
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media  screen  and (max-width: 400px) {
 .topnav  a {
-float: none;
-width: 100%;
-}
+	float: none;
+	width: 100%;
+	}
 }
 body {
-font-family: "Open Sans", sans-serif;
-line-height: 1.25;
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.25;
 }
 table {
-border: 1px  solid  #ccc;
-border-collapse: collapse;
-margin: 0;
-padding: 0;
-width: 100%;
-table-layout: fixed;
+	border: 1px  solid  #ccc;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	table-layout: fixed;
 }
 table  caption {
-font-size: 1.5em;
-margin: .5em  0  .75em;
+	font-size: 1.5em;
+	margin: .5em  0  .75em;
 }
 table  tr {
-background-color: #f8f8f8;
-border: 1px  solid  #ddd;
-padding: .35em;
+	background-color: #f8f8f8;
+	border: 1px  solid  #ddd;
+	padding: .35em;
 }
 table  th,
 table  td {
-padding: .625em;
-text-align: center;
+	padding: .625em;
+	text-align: center;
 }
 table  th {
-font-size: .85em;
-letter-spacing: .1em;
-text-transform: uppercase;
+	font-size: .85em;
+	letter-spacing: .1em;
+	text-transform: uppercase;
 }
 
 @media  screen  and (max-width: 600px) {
 table {
-border: 0;
+	border: 0;
 }
 table  caption {
-font-size: 1.3em;
+	font-size: 1.3em;
 }
 table  thead {
-border: none;
-clip: rect(0  0  0  0);
-height: 1px;
-margin: -1px;
-overflow: hidden;
-padding: 0;
-position: absolute;
-width: 1px;
+	border: none;
+	clip: rect(0  0  0  0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 }  
 table  tr {
-border-bottom: 3px  solid  #ddd;
-display: block;
-margin-bottom: .625em;
+	border-bottom: 3px  solid  #ddd;
+	display: block;
+	margin-bottom: .625em;
 }
 table  td {
-border-bottom: 1px  solid  #ddd;
-display: block;
-font-size: .8em;
-text-align: right;
+	border-bottom: 1px  solid  #ddd;
+	display: block;
+	font-size: .8em;
+	text-align: right;
 }
 table  td::before {
 /*
@@ -378,6 +378,6 @@ ng build --watch
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MDE5OTg4NSwtMjAyNDgyNDExMCwzMD
-A5NTE3NTcsLTc2NDU2MTk1NiwyMDUxNDM5MTU3XX0=
+eyJoaXN0b3J5IjpbNTYwNTc5NjYxLC0yMDI0ODI0MTEwLDMwMD
+k1MTc1NywtNzY0NTYxOTU2LDIwNTE0MzkxNTddfQ==
 -->
