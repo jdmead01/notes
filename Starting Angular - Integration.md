@@ -123,34 +123,20 @@ getTasksFromService(){
 ```html
 <!--The content below is only a placeholder and can be replaced.-->
 
-<div  style="text-align:center">
-
-</div>
-
+<div  style="text-align:center"></div>
 <div  class="header">
-
-<h1>Welcome to {{ title }}!</h1>
-
-<a  href="/generate"></a>
-
-<img  class="ng"  width="40"  alt="Angular Logo"  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-
+	<h1>Welcome to {{ title }}!</h1>
+	<a  href="/generate"></a>
+		<img  class="ng"  width="40"  alt="Angular Logo"  	src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 <p>Create (app.POST) | Read (app.GET) | Update (app.PUT) | Delete (app.DELETE)</p>
-
 </div>
-
-  
-
 <div  class="topnav">
-
 <a  href="#">Add New Restaurant</a>
 
 <!-- <a href="#">Link</a>
 
 <a href="#">Link</a> -->
-
 <a  href="#"  style="float:right">Link</a>
-
 </div>
 <div  class="row">
 <div  class="leftcolumn">
@@ -204,6 +190,6 @@ getTasksFromService(){
 <button  (click)="onButtonClickParams(5, 'hello')">Click me!</button>
 <button  (click)="onButtonClickEvent($event)">Click me!</button>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM3NTk2MzIzLC03NjQ1NjE5NTYsMjA1MT
-QzOTE1N119
+eyJoaXN0b3J5IjpbLTEwODUyMjY3NDEsLTc2NDU2MTk1NiwyMD
+UxNDM5MTU3XX0=
 -->
