@@ -180,7 +180,8 @@ If you identify more than one schema (1 to many relationship) ensure the schema 
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/widget_db');
-var FeaturesSchema = new mongoose.Schema({
+
+var FeatureSchema = new mongoose.Schema({
 	feature: {type: String, required: true, minlength: 5},
 	completed: { type: Boolean, default: false}
 	}, {timestamps: true });
@@ -217,8 +218,8 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTAzMjM0NjAsLTE3ODY0OTA2ODgsMT
-I1ODc0ODIzMSwtMjk1NjU3OTI3LDcxNTM1MDQ2Nyw3ODIwMjUy
-MTQsLTMzOTY5NzkwMSwtMjAwOTMwODM2MywyMDQ2MTc0NTEsNj
-ExNTg0NjU0XX0=
+eyJoaXN0b3J5IjpbLTU5MjY2Nzc3MywtMTY1MDMyMzQ2MCwtMT
+c4NjQ5MDY4OCwxMjU4NzQ4MjMxLC0yOTU2NTc5MjcsNzE1MzUw
+NDY3LDc4MjAyNTIxNCwtMzM5Njk3OTAxLC0yMDA5MzA4MzYzLD
+IwNDYxNzQ1MSw2MTE1ODQ2NTRdfQ==
 -->
