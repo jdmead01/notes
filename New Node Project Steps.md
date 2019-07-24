@@ -11,7 +11,7 @@ mkdir {{project_name}}
 cd {{project_name}}
 ```
  - [ ] within the project run the following commands in the terminal
- ```term
+ ```terminal
  - [ ] List item
 
 npm init -y
@@ -205,7 +205,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTY0Nzk3OTksNzE1MzUwNDY3LDc4Mj
-AyNTIxNCwtMzM5Njk3OTAxLC0yMDA5MzA4MzYzLDIwNDYxNzQ1
-MSw2MTE1ODQ2NTRdfQ==
+eyJoaXN0b3J5IjpbLTI5NTY1NzkyNyw3MTUzNTA0NjcsNzgyMD
+I1MjE0LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUx
+LDYxMTU4NDY1NF19
 -->
