@@ -331,14 +331,11 @@ margin-top: 20px;
 	display: table;
 	clear: both;
 	}
+	
 /* Footer */
-
 .footer {
-
 padding: 20px;
-
 text-align: center;
-
 background: #ddd;
 
 margin-top: 20px;
@@ -437,112 +434,52 @@ text-align: center;
 
 }
 
-  
-
 table  th {
-
 font-size: .85em;
-
 letter-spacing: .1em;
-
 text-transform: uppercase;
-
 }
-
-  
 
 @media  screen  and (max-width: 600px) {
-
 table {
-
 border: 0;
-
 }
-
-  
-
 table  caption {
-
 font-size: 1.3em;
-
 }
-
-  
-
 table  thead {
-
 border: none;
-
 clip: rect(0  0  0  0);
-
 height: 1px;
-
 margin: -1px;
-
 overflow: hidden;
-
 padding: 0;
-
 position: absolute;
-
 width: 1px;
-
-}
-
-  
-
+}  
 table  tr {
-
 border-bottom: 3px  solid  #ddd;
-
 display: block;
-
 margin-bottom: .625em;
-
 }
-
-  
-
 table  td {
-
 border-bottom: 1px  solid  #ddd;
-
 display: block;
-
 font-size: .8em;
-
 text-align: right;
-
 }
-
-  
-
 table  td::before {
-
 /*
-
 * aria-label has no advantage, it won't be read inside a table
-
 content: attr(aria-label);
-
 */
-
 content: attr(data-label);
-
 float: left;
-
 font-weight: bold;
-
 text-transform: uppercase;
-
 }
-
-  
-
 table  td:last-child {
-
 border-bottom: 0;
-
 }
 
 }
@@ -566,6 +503,6 @@ ng build --watch
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwOTI5MDEwMywtMjAyNDgyNDExMCwzMD
-A5NTE3NTcsLTc2NDU2MTk1NiwyMDUxNDM5MTU3XX0=
+eyJoaXN0b3J5IjpbLTEwOTUwMDE1MTEsLTIwMjQ4MjQxMTAsMz
+AwOTUxNzU3LC03NjQ1NjE5NTYsMjA1MTQzOTE1N119
 -->
