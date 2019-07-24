@@ -14,7 +14,7 @@ cd {{project_name}}
  - [ ] within the project run the following commands in the terminal
  ```terminal
 npm init -y
-npm install express ejs express-session body-parser express-flash mongoose moment mongoose socket.io
+npm install express body-parser mongoose 
 code .
 ```
 
@@ -220,8 +220,9 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY3NDMxOTk2LC0yMDg3MjE3OTgyLC0xNj
-UwMzIzNDYwLC0xNzg2NDkwNjg4LDEyNTg3NDgyMzEsLTI5NTY1
-NzkyNyw3MTUzNTA0NjcsNzgyMDI1MjE0LC0zMzk2OTc5MDEsLT
-IwMDkzMDgzNjMsMjA0NjE3NDUxLDYxMTU4NDY1NF19
+eyJoaXN0b3J5IjpbLTE5Nzk0MjIwODgsOTY3NDMxOTk2LC0yMD
+g3MjE3OTgyLC0xNjUwMzIzNDYwLC0xNzg2NDkwNjg4LDEyNTg3
+NDgyMzEsLTI5NTY1NzkyNyw3MTUzNTA0NjcsNzgyMDI1MjE0LC
+0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUxLDYxMTU4
+NDY1NF19
 -->
