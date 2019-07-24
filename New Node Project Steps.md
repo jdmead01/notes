@@ -48,7 +48,7 @@ app.listen(8000, (err)=>{
 	} else {
 		console.log("listening on port 8000...")
 	}
-
+})
 ```
 ##### create controller.js
 ```javascript
@@ -172,19 +172,27 @@ res.redirect('/');
 ```
 ##### models.js
 ```javascript
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
- - [ ] make sure to change your database name below in the route
+mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost/quotes_db')
+mongoose.connect('mongodb://localhost/task_db');
 
-var QuoteSchema =  new mongoose.Schema({
-	name: String,
-	quote: String,
-},
-{timestamps : true})  //https://stackoverflow.com/a/15147350/5248397
+  
 
-module.exports = mongoose.model('Quote', QuoteSchema)
+var TaskSchema = new mongoose.Schema({
+
+title: { type: String, required: true, minlength: 2},
+
+description: { type: String, maxlength: 255, default: ""},
+completed: { type: Boolean, default: false}
+
+}, {timestamps: true });
+
+mongoose.model('Task', TaskSchema);
+var Task = mongoose.model('Task')
+
+module.exports = Task;
 ```
 
 #### Mongo
@@ -204,7 +212,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ2NDQxMjEzLC0yOTU2NTc5MjcsNzE1Mz
+eyJoaXN0b3J5IjpbNTQxMTAwNDk3LC0yOTU2NTc5MjcsNzE1Mz
 UwNDY3LDc4MjAyNTIxNCwtMzM5Njk3OTAxLC0yMDA5MzA4MzYz
 LDIwNDYxNzQ1MSw2MTE1ODQ2NTRdfQ==
 -->
