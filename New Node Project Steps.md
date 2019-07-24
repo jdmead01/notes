@@ -4,9 +4,12 @@
  - [ ] Navigate to a folder you want to create your project
  - [ ] create project using terminal 
  ```terminal
+mkdir {{project_name}}
+```
+ - [ ] Navigate into the newly created project using terminal:
+ ```terminal
 
 ```
- - [ ] 
  - [ ] 
  - [ ] List item
 
@@ -204,7 +207,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NjYwMDI0MSw3MTUzNTA0NjcsNzgyMD
+eyJoaXN0b3J5IjpbLTM3NzY4MTkzNSw3MTUzNTA0NjcsNzgyMD
 I1MjE0LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUx
 LDYxMTU4NDY1NF19
 -->
