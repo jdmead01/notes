@@ -83,27 +83,26 @@ module.exports  = {
 				console.log("Data: ");
 				console.log(data);
 				res.json(data); //message: "Success", data:
-}
-})
-},
-id: (req, res)=>{
-// GET: Retrieve a Task by ID
-console.log("in Id route");
-console.log("req.params.id: ");
-console.log(req.params.id);
-Task.findById({_id: req.params.id}, function(err, data){
-if(err){
-console.log("name Returned error", err);
-res.json({message: "Error", error: err});
-}
-else {
-console.log("Data: ");
-console.log(data);
-res.json({message: "Success", data: data});
-}
-})
-},
-create: (req, res)=>{
+			}
+		})
+	},
+	id: (req, res)=>{
+		// GET: Retrieve a Task by ID
+		console.log("in Id route");
+		console.log("req.params.id: ");
+		console.log(req.params.id);
+		Task.findById({_id: req.params.id}, function(err, data){
+			if(err){
+				console.log("name Returned error", err);
+				res.json({message: "Error", error: err});
+			}else {
+				console.log("Data: ");
+				console.log(data);
+				res.json({message: "Success", data: data});
+			}
+		})
+	},
+	create: (req, res)=>{
 // POST: Create a Task
 console.log("in Create route");
 console.log("req.params.id: ");
@@ -220,7 +219,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MTE0MzMxOCw3MTUzNTA0NjcsNzgyMD
-I1MjE0LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUx
-LDYxMTU4NDY1NF19
+eyJoaXN0b3J5IjpbLTEzOTk3NzQxODQsNzE1MzUwNDY3LDc4Mj
+AyNTIxNCwtMzM5Njk3OTAxLC0yMDA5MzA4MzYzLDIwNDYxNzQ1
+MSw2MTE1ODQ2NTRdfQ==
 -->
