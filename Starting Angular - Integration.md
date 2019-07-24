@@ -370,14 +370,16 @@ navigate to the root of the project where server.js lives
 nodemon server.js
 ```
 **Run Angular Server**
-```text
+
+ - [ ] Navigate to the Angular folder you created 'public'
+
 Navigate to the angular folder 'public'
-```
+
 ```terminal
 ng build --watch
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNjIzMTkwNywtMjAyNDgyNDExMCwzMD
+eyJoaXN0b3J5IjpbMTU1NDE1NDUwOCwtMjAyNDgyNDExMCwzMD
 A5NTE3NTcsLTc2NDU2MTk1NiwyMDUxNDM5MTU3XX0=
 -->
