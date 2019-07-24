@@ -68,12 +68,23 @@ module.exports = {
 ##### create routes.js
 ```javascript
 const controller = require("./controller");
+
+  
+
 module.exports = function(app){
-  app.get('/', controller.index)
-  app.get('/cars', controller.cars)
-  app.get('/cars/new', controller.newcar)
-  app.get('/cats', controller.cats)
-  app.get('/cats/:catID', controller.cat_show)
+
+app.get('/', controller.home)
+
+app.post('/create/', controller.create)
+
+app.get('/get/:id/', [controller.id](http://controller.id/))
+
+app.put('/update/:id/', controller.update)
+
+app.delete('/destroy/:id/', controller.delete)
+
+app.post('/generate/', controller.generate)
+
 }
 ```
 ##### models.js
@@ -108,5 +119,5 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjExNTg0NjU0XX0=
+eyJoaXN0b3J5IjpbMjA0NjE3NDUxLDYxMTU4NDY1NF19
 -->
