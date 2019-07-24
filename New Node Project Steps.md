@@ -8,14 +8,12 @@ mkdir {{project_name}}
 ```
  - [ ] Navigate into the newly created project using terminal:
  ```terminal
-
+cd {{project_name}}
 ```
- - [ ] 
+ - [ ] within the project run the following commands in the terminal
+ ```term
  - [ ] List item
 
-mkdir {{project_name}}
-cd {{project_name}}
-mkdir static static/images static/css views
 npm init -y
 npm install express ejs express-session body-parser express-flash mongoose moment mongoose socket.io
 code .
@@ -207,7 +205,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NzY4MTkzNSw3MTUzNTA0NjcsNzgyMD
-I1MjE0LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUx
-LDYxMTU4NDY1NF19
+eyJoaXN0b3J5IjpbLTE4NTY0Nzk3OTksNzE1MzUwNDY3LDc4Mj
+AyNTIxNCwtMzM5Njk3OTAxLC0yMDA5MzA4MzYzLDIwNDYxNzQ1
+MSw2MTE1ODQ2NTRdfQ==
 -->
