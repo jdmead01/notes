@@ -150,7 +150,7 @@ ng g s http
 ##### app.component.ts
 ```typescript
 import { Component } from '@angular/core';
-import { httpService } from './http.service'
+import { HttpService } from './http.service'
 
 @Component({
     selector: 'app-root',
@@ -199,7 +199,7 @@ export class AppComponent {
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { TasksService } from './tasks.service'
+import { HttpService } from './tasks.service'
 import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 
@@ -211,7 +211,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [TasksService],
+  providers: [HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
@@ -250,5 +250,5 @@ U4ODA4NzEyLC0xNTUxNzgxODA0LDExMzEwODExNjQsNDcwOTM5
 OTIxLC02ODU4ODY2MzJdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NTQ3MzY5M119
+eyJoaXN0b3J5IjpbMjA1NjQwMjQ5MV19
 -->
