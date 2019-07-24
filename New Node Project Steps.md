@@ -42,7 +42,7 @@ app.listen(8000, (err)=>{
 ```
 ##### create controller.js
 ```javascript
-const  Task  =  require("./models");
+const  Widget  =  require("./models");
 const  bodyParser  =  require('body-parser');
 var  moment  =  require('moment');
   
@@ -209,9 +209,9 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzcyNDY4MzgsOTY3NDMxOTk2LC0yMD
-g3MjE3OTgyLC0xNjUwMzIzNDYwLC0xNzg2NDkwNjg4LDEyNTg3
-NDgyMzEsLTI5NTY1NzkyNyw3MTUzNTA0NjcsNzgyMDI1MjE0LC
-0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUxLDYxMTU4
-NDY1NF19
+eyJoaXN0b3J5IjpbMTY5OTQzMTQ5Nyw5Njc0MzE5OTYsLTIwOD
+cyMTc5ODIsLTE2NTAzMjM0NjAsLTE3ODY0OTA2ODgsMTI1ODc0
+ODIzMSwtMjk1NjU3OTI3LDcxNTM1MDQ2Nyw3ODIwMjUyMTQsLT
+MzOTY5NzkwMSwtMjAwOTMwODM2MywyMDQ2MTc0NTEsNjExNTg0
+NjU0XX0=
 -->
