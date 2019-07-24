@@ -85,7 +85,7 @@ export class AppComponent implements OnInit {
 	
 constructor(private _httpService: HttpService){}
 
-// // examples 
+// // examples on initialization gives them values
 ngOnInit(){
 	this.getTasksFromService();
 	this.num = 7;
@@ -589,6 +589,6 @@ ng build --watch
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMzk2NTQ5MywtMjAyNDgyNDExMCwzMD
-A5NTE3NTcsLTc2NDU2MTk1NiwyMDUxNDM5MTU3XX0=
+eyJoaXN0b3J5IjpbLTExMzEyNDgxNDYsLTIwMjQ4MjQxMTAsMz
+AwOTUxNzU3LC03NjQ1NjE5NTYsMjA1MTQzOTE1N119
 -->
