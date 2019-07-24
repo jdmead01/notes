@@ -1,5 +1,7 @@
 ### Set up Express backend
 
+ - [ ] if you followed steps in express you can skip this 
+
 ```console
 mkdir {{{project folder}}}
 cd {{{project folder}}}
@@ -124,6 +126,8 @@ module.exports = mongoose.model('Task', TaskSchema)
 
 ##### Install Angular
 
+ - [ ] install Angular Globally on your machine using your terminal:
+
 ```console
 npm install -g @angular/cli
 ```
@@ -246,5 +250,5 @@ U4ODA4NzEyLC0xNTUxNzgxODA0LDExMzEwODExNjQsNDcwOTM5
 OTIxLC02ODU4ODY2MzJdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMzExNzk2NV19
+eyJoaXN0b3J5IjpbNDA2NjUxMTcyXX0=
 -->
