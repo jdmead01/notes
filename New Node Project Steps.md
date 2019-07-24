@@ -103,25 +103,24 @@ module.exports  = {
 		})
 	},
 	create: (req, res)=>{
-// POST: Create a Task
-console.log("in Create route");
-console.log("req.params.id: ");
-console.log(req.params.id);
-console.log("req.body: ");
-console.log(req.body);
-// req.body = {
-// 'title': "something",
-// 'description': "something else"
-// }
-Task.create(req.body, function(err, data){
-if(err){
-console.log("new Returned error", err);
-res.json({message: "Error", error: err});
-}
-else {
-console.log("Data: ");
-console.log(data);
-res.json({message: "Success", data: data});
+		// POST: Create a Task
+		console.log("in Create route");
+		console.log("req.params.id: ");
+		console.log(req.params.id);
+		console.log("req.body: ");
+		console.log(req.body);
+		req.body = {
+			'title': "something",
+			'description': "something else"
+			}
+		Task.create(req.body, function(err, data){
+			if(err){
+				console.log("new Returned error", err);
+				res.json({message: "Error", error: err});
+			}else {
+				console.log("Data: ");
+				console.log(data);
+				res.json({message: "Success", data: data});
 }
 })
 },
@@ -219,7 +218,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTk3NzQxODQsNzE1MzUwNDY3LDc4Mj
-AyNTIxNCwtMzM5Njk3OTAxLC0yMDA5MzA4MzYzLDIwNDYxNzQ1
-MSw2MTE1ODQ2NTRdfQ==
+eyJoaXN0b3J5IjpbLTI4MzA3NjAxNiw3MTUzNTA0NjcsNzgyMD
+I1MjE0LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUx
+LDYxMTU4NDY1NF19
 -->
