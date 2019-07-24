@@ -139,19 +139,19 @@ module.exports  = {
 				console.log("Data: ");
 				console.log(data);
 				res.json({message: "Success", data: data});
-				}
-			})
-		},
-		delete: (req, res)=>{
-			// DELETE: Delete a Task by ID
-			console.log("in Delete route");
-			console.log("req.params.id: ");
-			console.log(req.params.id);
-			Task.findByIdAndDelete({_id: req.params.id}, function(err, data){
-				if(err){
-					console.log("remove Returned error", err);
-					res.json({message: "Error", error: err});
-				}else {
+			}
+		})
+	},
+	delete: (req, res)=>{
+		// DELETE: Delete a Task by ID
+		console.log("in Delete route");
+		console.log("req.params.id: ");
+		console.log(req.params.id);			
+		Task.findByIdAndDelete({_id: req.params.id}, function(err, data){
+			if(err){
+				console.log("remove Returned error", err);
+				res.json({message: "Error", error: err});
+			}else {
 					console.log("Data: ");
 					console.log(data);
 					res.json({message: "Success", data: data});
@@ -216,7 +216,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc4MTk1NDUyLDcxNTM1MDQ2Nyw3ODIwMj
-UyMTQsLTMzOTY5NzkwMSwtMjAwOTMwODM2MywyMDQ2MTc0NTEs
-NjExNTg0NjU0XX0=
+eyJoaXN0b3J5IjpbLTkyNTA3MDg4NCw3MTUzNTA0NjcsNzgyMD
+I1MjE0LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUx
+LDYxMTU4NDY1NF19
 -->
