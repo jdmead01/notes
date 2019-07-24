@@ -34,7 +34,7 @@ imports: [
 	})
 	export class AppModule { }
 ```
-**http:service.ts**
+**http.service.ts**
 ```typescript
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -124,7 +124,6 @@ getTasksFromService(){
 **app.component.html**
 ```html
 <!--The content below is only a placeholder and can be replaced.-->
-
 <div  style="text-align:center"></div>
 <div  class="header">
 	<h1>Welcome to {{ title }}!</h1>
@@ -195,25 +194,13 @@ getTasksFromService(){
 ** app.component.css **
 ``` css
 * {
-
-box-sizing: border-box;
-
+	box-sizing: border-box;
 }
-
-  
-
 body {
-
-font-family: Arial;
-
-padding: 10px;
-
-background: #f1f1f1;
-
-}
-
-  
-
+	font-family: Arial;	
+	padding: 10px;
+	background: #f1f1f1;
+	
 /* Header/Blog Title */
 
 .header {
@@ -589,6 +576,6 @@ ng build --watch
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzEyNDgxNDYsLTIwMjQ4MjQxMTAsMz
-AwOTUxNzU3LC03NjQ1NjE5NTYsMjA1MTQzOTE1N119
+eyJoaXN0b3J5IjpbLTk2NzYyODY3NywtMjAyNDgyNDExMCwzMD
+A5NTE3NTcsLTc2NDU2MTk1NiwyMDUxNDM5MTU3XX0=
 -->
