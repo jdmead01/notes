@@ -141,16 +141,16 @@ ng build --watch
 
 
 
-##### Build a service
+##### Build http.service.ts
 
 ```
-ng g s [[service name]] (tasks)
+ng g s http
 ```
 
 ##### app.component.ts
 ```typescript
 import { Component } from '@angular/core';
-import { TasksService } from './tasks.service'
+import { httpService } from './http.service'
 
 @Component({
     selector: 'app-root',
@@ -250,5 +250,5 @@ U4ODA4NzEyLC0xNTUxNzgxODA0LDExMzEwODExNjQsNDcwOTM5
 OTIxLC02ODU4ODY2MzJdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA2NjUxMTcyXX0=
+eyJoaXN0b3J5IjpbMTY5NTQ3MzY5M119
 -->
