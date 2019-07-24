@@ -170,23 +170,17 @@ res.redirect('/');
 }
 }
 ```
+
 ##### models.js
 ```javascript
 const mongoose = require("mongoose");
-
 mongoose.Promise = global.Promise;
-
 mongoose.connect('mongodb://localhost/task_db');
 
-  
-
 var TaskSchema = new mongoose.Schema({
-
-title: { type: String, required: true, minlength: 2},
-
-description: { type: String, maxlength: 255, default: ""},
-completed: { type: Boolean, default: false}
-
+	title: { type: String, required: true, minlength: 2},
+	description: { type: String, maxlength: 255, default: ""},
+	completed: { type: Boolean, default: false}
 }, {timestamps: true });
 
 mongoose.model('Task', TaskSchema);
@@ -194,6 +188,8 @@ var Task = mongoose.model('Task')
 
 module.exports = Task;
 ```
+
+ - [ ] Ensure you are referencing the correct Database in the mongoose.connect portion of your models.js
 
 #### Mongo
 ```console
@@ -212,7 +208,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQxMTAwNDk3LC0yOTU2NTc5MjcsNzE1Mz
-UwNDY3LDc4MjAyNTIxNCwtMzM5Njk3OTAxLC0yMDA5MzA4MzYz
-LDIwNDYxNzQ1MSw2MTE1ODQ2NTRdfQ==
+eyJoaXN0b3J5IjpbNTg0NTc4NjQsLTI5NTY1NzkyNyw3MTUzNT
+A0NjcsNzgyMDI1MjE0LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMs
+MjA0NjE3NDUxLDYxMTU4NDY1NF19
 -->
