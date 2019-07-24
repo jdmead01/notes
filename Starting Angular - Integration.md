@@ -574,9 +574,17 @@ border-bottom: 0;
 ```terminal
 sudo mongod
 mongo
+```
+**Run Node **
+navigate to the root of the project where server.js lives 
+```terminal 
+nodemon server.js
+```
+**Run Angular Server **
+Navigate to the angular folder 'public'
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDU1OTc4NDYsLTc2NDU2MTk1NiwyMD
-UxNDM5MTU3XX0=
+eyJoaXN0b3J5IjpbLTI2OTMyMjk4NSwtNzY0NTYxOTU2LDIwNT
+E0MzkxNTddfQ==
 -->
