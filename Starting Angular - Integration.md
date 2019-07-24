@@ -122,22 +122,128 @@ getTasksFromService(){
 **app.component.html**
 ```html
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-	<h1>Welcome to {{ title }}!</h1>
-		<img width="50" alt="Angular Logo" 		src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+
+<div  style="text-align:center">
+
 </div>
-//  // loop examples for iterations and displaying content in the database
-<p *ngIf="loggedIn">You are logged in!</p>
-<p *ngFor="let snack of snacks">{{snack}}</p>
-<p *ngIf="snacks.length < 3">You need more snacks.</p>
+
+<div  class="header">
+
+<h1>Welcome to {{ title }}!</h1>
+
+<a  href="/generate"></a>
+
+<img  class="ng"  width="40"  alt="Angular Logo"  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+
+<p>Create (app.POST) | Read (app.GET) | Update (app.PUT) | Delete (app.DELETE)</p>
+
+</div>
 
   
-//  // button actions for reference 
-<button (click)="onButtonClick()" >Click me!</button>
-<button (click)="onButtonClickParam(5)">Click me!</button>
-<button (click)="onButtonClickParams(5, 'hello')">Click me!</button>
-<button (click)="onButtonClickEvent($event)">Click me!</button>
+
+<div  class="topnav">
+
+<a  href="#">Add New Restaurant</a>
+
+<!-- <a href="#">Link</a>
+
+<a href="#">Link</a> -->
+
+<a  href="#"  style="float:right">Link</a>
+
+</div>
+
+  
+
+<div  class="row">
+
+<div  class="leftcolumn">
+
+<div  class="card">
+
+<h2>Lets Eat!</h2>
+
+<h5>current Date</h5>
+
+<!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+
+<table>
+
+<caption>Statement Summary</caption>
+
+<thead>
+
+<tr>
+
+<th  scope="col">Restaurant</th>
+
+<th  scope="col">Cuisine</th>
+
+<th  scope="col">Actions Available</th>
+
+</tr>
+
+</thead>
+
+{{ getRestaurantsFromService | json}}
+
+<tbody>
+
+<tr>
+
+<td  data-label="Account">{{restaurant.name}}</td>
+
+<td  data-label="Due Date">04/01/2016</td>
+
+<td  data-label="Amount">$1,190</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+  
+
+</div>
+
+</div>
+
+<div  class="rightcolumn">
+
+<div  class="card">
+
+<h2>Restaurant Name</h2>
+
+<div  class="fakeimg"  style="height:100px;">Image</div>
+
+<p>Review</p>
+
+</div>
+
+<div  class="card">
+
+<h3>Popular Restaurants</h3>
+
+<div  class="fakeimg"><p>Image</p></div>
+<div  class="fakeimg"><p>Image</p></div>
+<div  class="fakeimg"><p>Image</p></div>
+</div>
+</div>
+</div>
+<div  class="footer">
+<h2>Another Failed Belt Exam</h2>
+</div>
+// // loops for actionables in displaying content located in the databse
+<p  *ngIf="loggedIn">You are logged in!</p>
+<p  *ngFor="let snack of snacks">{{snack}}</p>
+<p  *ngIf="snacks.length < 3">You need more snacks.</p>
+// // button actionables examples 
+<button  (click)="onButtonClick()" >Click me!</button>
+<button  (click)="onButtonClickParam(5)">Click me!</button>
+<button  (click)="onButtonClickParams(5, 'hello')">Click me!</button>
+<button  (click)="onButtonClickEvent($event)">Click me!</button>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM2NjEwNDYwLC03NjQ1NjE5NTYsMjA1MT
+eyJoaXN0b3J5IjpbNDMxMTEyNTk3LC03NjQ1NjE5NTYsMjA1MT
 QzOTE1N119
 -->
