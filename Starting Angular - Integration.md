@@ -10,9 +10,45 @@ ng new public
 ```terminal
 cd public
 ```
+**app.module.ts**
+```javascript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
- 4. List item
+import { HttpClient } from '@angular/common/http';
+
+import { HttpService } from './http.service';
+
+import { HttpClientModule } from '@angular/common/http';
+
+import { AppComponent } from './app.component';
+
+  
+
+@NgModule({
+
+declarations: [
+
+AppComponent
+
+],
+
+imports: [
+
+BrowserModule,
+
+HttpClientModule
+
+],
+
+providers: [HttpService],
+
+bootstrap: [AppComponent]
+
+})
+
+export class AppModule { }
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjMwMDU5NTksMjA1MTQzOTE1N119
+eyJoaXN0b3J5IjpbLTkzNDcwMDQ0MywyMDUxNDM5MTU3XX0=
 -->
