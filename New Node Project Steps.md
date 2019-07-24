@@ -27,6 +27,7 @@ const  path  =  require("path")
 const  session  =  require("express-session")
 const  flash  =  require("express-flash")
 var  app  =  express()
+
 app.use(bp.json());
 app.use(express.static( __dirname +  '/public/dist/public' ));
 app.use(session({
@@ -40,17 +41,14 @@ app.use(flash());
 app.set('views', path.join(__dirname, './views'))
 app.set('view engine', 'ejs')
 require('./routes')(app)
+
 app.listen(8000, (err)=>{
+	if (err){
+		console.log(err)
+	} else {
+		console.log("listening on port 8000...")
+	}
 
-if (err){
-
-console.log(err)
-
-} else {
-
-console.log("listening on port 8000...")
-
-}
 ```
 ##### create controller.js
 ```javascript
@@ -206,7 +204,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NzQ3NTk0NSwtMjk1NjU3OTI3LDcxNT
-M1MDQ2Nyw3ODIwMjUyMTQsLTMzOTY5NzkwMSwtMjAwOTMwODM2
-MywyMDQ2MTc0NTEsNjExNTg0NjU0XX0=
+eyJoaXN0b3J5IjpbMzQ2NDQxMjEzLC0yOTU2NTc5MjcsNzE1Mz
+UwNDY3LDc4MjAyNTIxNCwtMzM5Njk3OTAxLC0yMDA5MzA4MzYz
+LDIwNDYxNzQ1MSw2MTE1ODQ2NTRdfQ==
 -->
