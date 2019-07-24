@@ -55,15 +55,6 @@ export class HttpService {
 	}
 
 getTasks(){
-
-	// // our http response is an Observable, store it in a variable
-
-	let tempObservable = this._http.get('/tasks');
-
-	// // subscribe to the Observable and provide the code we would like to do with our data from the response
-
-	tempObservable.subscribe(data => console.log("Got our tasks!", data));
-
 	return this._http.get('/tasks');
 	}
 }
@@ -385,7 +376,7 @@ ng build --watch
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU2ODQzNjI1LDI2Nzc4MjE3MSwtMjAyND
+eyJoaXN0b3J5IjpbNDEwNTkxMjk3LDI2Nzc4MjE3MSwtMjAyND
 gyNDExMCwzMDA5NTE3NTcsLTc2NDU2MTk1NiwyMDUxNDM5MTU3
 XX0=
 -->
