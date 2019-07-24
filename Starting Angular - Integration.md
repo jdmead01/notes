@@ -22,20 +22,19 @@ import { AppComponent } from './app.component';
 @NgModule({
 declarations: [
 	AppComponent
-],
+	],
 
 imports: [
 	BrowserModule,
-	HttpClientModule],
-
-providers: [HttpService],
-
-bootstrap: [AppComponent]
-
-})
-
-export class AppModule { }
-
+	HttpClientModule
+	],
+	providers: [HttpService],
+	bootstrap: [AppComponent]
+	})
+	export class AppModule { }
+```
+**http:service.ts**
+```ty
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTAzNjU2MDUsMjA1MTQzOTE1N119
+eyJoaXN0b3J5IjpbLTE5NjM1MzI3ODgsMjA1MTQzOTE1N119
 -->
