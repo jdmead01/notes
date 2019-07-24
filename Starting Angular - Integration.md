@@ -1,17 +1,20 @@
 ##  New Angular Project 
 
- 1. [ ] navigate into the folder directory you want your new app to be saved in:
+ - [ ] navigate into the folder directory you want your new app to be saved in:
 ``` terminal 
 ng new public
 ```
 
- 2. [ ] Yes to Routing
- 3. [ ] Select CSS
- 4. [ ] in server.js 
+ - [ ] Yes to Routing
+ - [ ] Select CSS
+ - [ ] in server.js 
 ```terminal
 cd public
 ```
 **app.module.ts**
+
+ - [ ] make sure to import form modules at the page header as well as in the imports section below
+
 ```javascript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -382,7 +385,7 @@ ng build --watch
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MTAyNDc4LDI2Nzc4MjE3MSwtMjAyND
+eyJoaXN0b3J5IjpbOTU2ODQzNjI1LDI2Nzc4MjE3MSwtMjAyND
 gyNDExMCwzMDA5NTE3NTcsLTc2NDU2MTk1NiwyMDUxNDM5MTU3
 XX0=
 -->
