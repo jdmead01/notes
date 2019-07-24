@@ -7,6 +7,7 @@ ng new public
 
  2. [ ] Yes to Routing
  3. [ ] Select CSS
+ 4. [ ] in server.js 
 ```terminal
 cd public
 ```
@@ -587,6 +588,6 @@ ng build --watch
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAwOTUxNzU3LC03NjQ1NjE5NTYsMjA1MT
-QzOTE1N119
+eyJoaXN0b3J5IjpbLTIwMjQ4MjQxMTAsMzAwOTUxNzU3LC03Nj
+Q1NjE5NTYsMjA1MTQzOTE1N119
 -->
