@@ -179,19 +179,21 @@ If you identify more than one schema (1 to many relationship) ensure the schema 
 ```javascript
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/task_db');
+mongoose.connect('mongodb://localhost/widget_db');
 var FeaturesSchema = new mongoose.Schema({
 	feature: {type: String, required: true, minlength: 5},
 	completed: { type: Boolean, default: false}
-	}
+	}, {timestamps: true });
+	
 var WidgetSchema = new mongoose.Schema({
 	title: { type: String, required: true, minlength: 2},
 	description: { type: String, maxlength: 255, default: ""},
+	feature: [FeatureSchema],
 	completed: { type: Boolean, default: false}
 }, {timestamps: true });
 
-mongoose.model('Task', TaskSchema);
-var Task = mongoose.model('Task')
+mongoose.model('Widget', WidgetSchema);
+var Widget = mongoose.model('Widget')
 
 module.exports = Task;
 ```
@@ -215,7 +217,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzA1NzU0NDMsLTE3ODY0OTA2ODgsMT
+eyJoaXN0b3J5IjpbLTE2NTAzMjM0NjAsLTE3ODY0OTA2ODgsMT
 I1ODc0ODIzMSwtMjk1NjU3OTI3LDcxNTM1MDQ2Nyw3ODIwMjUy
 MTQsLTMzOTY5NzkwMSwtMjAwOTMwODM2MywyMDQ2MTc0NTEsNj
 ExNTg0NjU0XX0=
