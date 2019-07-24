@@ -316,124 +316,62 @@ padding: 20px;
 .card {
 
 background-color: white;
-
 padding: 20px;
-
 margin-top: 20px;
-
 }
-
-  
-
 /* Clear floats after the columns */
 .row:after {
 	content: "";
 	display: table;
 	clear: both;
 	}
-	
 /* Footer */
 .footer {
 padding: 20px;
 text-align: center;
 background: #ddd;
-
 margin-top: 20px;
-
-}
-
-  
-
+} 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-
 @media  screen  and (max-width: 800px) {
-
 .leftcolumn, .rightcolumn {
-
 width: 100%;
-
 padding: 0;
-
 }
-
 }
-
-  
-
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-
 @media  screen  and (max-width: 400px) {
-
 .topnav  a {
-
 float: none;
-
 width: 100%;
-
 }
-
 }
-
 body {
-
 font-family: "Open Sans", sans-serif;
-
 line-height: 1.25;
-
 }
-
-  
-
 table {
-
 border: 1px  solid  #ccc;
-
 border-collapse: collapse;
-
 margin: 0;
-
 padding: 0;
-
 width: 100%;
-
 table-layout: fixed;
-
 }
-
-  
-
 table  caption {
-
 font-size: 1.5em;
-
 margin: .5em  0  .75em;
-
 }
-
-  
-
 table  tr {
-
 background-color: #f8f8f8;
-
 border: 1px  solid  #ddd;
-
 padding: .35em;
-
 }
-
-  
-
 table  th,
-
 table  td {
-
 padding: .625em;
-
 text-align: center;
-
 }
-
 table  th {
 font-size: .85em;
 letter-spacing: .1em;
@@ -503,6 +441,6 @@ ng build --watch
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTUwMDE1MTEsLTIwMjQ4MjQxMTAsMz
-AwOTUxNzU3LC03NjQ1NjE5NTYsMjA1MTQzOTE1N119
+eyJoaXN0b3J5IjpbLTkzNzU2NzcwMSwtMjAyNDgyNDExMCwzMD
+A5NTE3NTcsLTc2NDU2MTk1NiwyMDUxNDM5MTU3XX0=
 -->
