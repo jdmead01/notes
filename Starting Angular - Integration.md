@@ -1,12 +1,18 @@
 ##  New Angular Project 
-navigate into the folder directory you want your new app to be saved in:
 
+ 1. [ ] navigate into the folder directory you want your new app to be saved in:
 ``` terminal 
 ng new public
 ```
 
- - [ ] Yes to 
+ 2. [ ] Yes to Routing
+ 3. [ ] Select CSS
+```terminal
+cd public
+```
+
+ 4. List item
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU1MDk1NTYyLDIwNTE0MzkxNTddfQ==
+eyJoaXN0b3J5IjpbLTIwNjMwMDU5NTksMjA1MTQzOTE1N119
 -->
