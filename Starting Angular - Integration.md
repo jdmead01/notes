@@ -119,10 +119,27 @@ getTasksFromService(){
 		}
 }
 ```
-**app.component.ts**
-```javascript
+**app.component.html**
+```html
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+	<h1>Welcome to {{ title }}!</h1>
+		<img width="50" alt="Angular Logo" 		src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<p *ngIf="loggedIn">You are logged in!</p>
+<p *ngFor="let snack of snacks">{{snack}}</p>
+<p *ngIf="snacks.length < 3">You need more snacks.</p>
 
+  
+// button a
+<button (click)="onButtonClick()" >Click me!</button>
+
+<button (click)="onButtonClickParam(5)">Click me!</button>
+
+<button (click)="onButtonClickParams(5, 'hello')">Click me!</button>
+
+<button (click)="onButtonClickEvent($event)">Click me!</button>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NTM4ODc3MywtNzY0NTYxOTU2LDIwNT
+eyJoaXN0b3J5IjpbLTEzNzg4NDgyMywtNzY0NTYxOTU2LDIwNT
 E0MzkxNTddfQ==
 -->
