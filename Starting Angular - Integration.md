@@ -200,17 +200,13 @@ body {
 	font-family: Arial;	
 	padding: 10px;
 	background: #f1f1f1;
-	
+	}
 /* Header/Blog Title */
-
 .header {
 
 padding: 30px;
-
 text-align: center;
-
 background: white;
-
 }
 
   
@@ -330,19 +326,11 @@ margin-top: 20px;
   
 
 /* Clear floats after the columns */
-
 .row:after {
-
-content: "";
-
-display: table;
-
-clear: both;
-
-}
-
-  
-
+	content: "";
+	display: table;
+	clear: both;
+	}
 /* Footer */
 
 .footer {
@@ -569,13 +557,15 @@ navigate to the root of the project where server.js lives
 ```terminal 
 nodemon server.js
 ```
-**Run Angular Server **
+** Run Angular Server  **
+```text
 Navigate to the angular folder 'public'
+```
 ```terminal
 ng build --watch
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NzYyODY3NywtMjAyNDgyNDExMCwzMD
+eyJoaXN0b3J5IjpbMTUwOTI5MDEwMywtMjAyNDgyNDExMCwzMD
 A5NTE3NTcsLTc2NDU2MTk1NiwyMDUxNDM5MTU3XX0=
 -->
