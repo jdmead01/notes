@@ -12,12 +12,12 @@ cd {{project_name}}
 ```
  - [ ] within the project run the following commands in the terminal
  ```terminal
- - [ ] List item
-
 npm init -y
 npm install express ejs express-session body-parser express-flash mongoose moment mongoose socket.io
 code .
 ```
+
+code . should open project up in VS Code 
 ##### create server.js
 ```javascript
 /// if you're only using angular all you need is body parser express 
@@ -205,7 +205,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NTY1NzkyNyw3MTUzNTA0NjcsNzgyMD
-I1MjE0LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUx
-LDYxMTU4NDY1NF19
+eyJoaXN0b3J5IjpbLTE4ODkxNDU4NjAsLTI5NTY1NzkyNyw3MT
+UzNTA0NjcsNzgyMDI1MjE0LC0zMzk2OTc5MDEsLTIwMDkzMDgz
+NjMsMjA0NjE3NDUxLDYxMTU4NDY1NF19
 -->
