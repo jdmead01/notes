@@ -306,24 +306,22 @@ console.log(err);
 console.info('%d tasks were successfully stored.', docs.length);
 
 }
-
 }
-
 res.redirect('/');
-
 }
-
 }
 ```
 ##### models.js
 ```javascript
 const mongoose = require('mongoose')
 
+ - [ ] make sure to change your database name below in the route
+
 mongoose.connect('mongodb://localhost/quotes_db')
 
 var QuoteSchema =  new mongoose.Schema({
-name: String,
-quote: String,
+	name: String,
+	quote: String,
 },
 {timestamps : true})  //https://stackoverflow.com/a/15147350/5248397
 
@@ -347,7 +345,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE1MzUwNDY3LDc4MjAyNTIxNCwtMzM5Nj
-k3OTAxLC0yMDA5MzA4MzYzLDIwNDYxNzQ1MSw2MTE1ODQ2NTRd
-fQ==
+eyJoaXN0b3J5IjpbLTE5ODQ1NTQ1NDEsNzE1MzUwNDY3LDc4Mj
+AyNTIxNCwtMzM5Njk3OTAxLC0yMDA5MzA4MzYzLDIwNDYxNzQ1
+MSw2MTE1ODQ2NTRdfQ==
 -->
