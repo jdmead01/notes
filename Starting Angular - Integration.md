@@ -20,6 +20,7 @@ import { HttpService } from './http.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 
+
 @NgModule({
 declarations: [
 	AppComponent
@@ -27,7 +28,8 @@ declarations: [
 
 imports: [
 	BrowserModule,
-	HttpClientModule
+	HttpClientModule,
+	FormsModule
 	],
 	providers: [HttpService],
 	bootstrap: [AppComponent]
@@ -380,6 +382,7 @@ ng build --watch
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY3NzgyMTcxLC0yMDI0ODI0MTEwLDMwMD
-k1MTc1NywtNzY0NTYxOTU2LDIwNTE0MzkxNTddfQ==
+eyJoaXN0b3J5IjpbLTI2MTAyNDc4LDI2Nzc4MjE3MSwtMjAyND
+gyNDExMCwzMDA5NTE3NTcsLTc2NDU2MTk1NiwyMDUxNDM5MTU3
+XX0=
 -->
