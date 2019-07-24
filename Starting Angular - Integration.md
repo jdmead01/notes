@@ -103,6 +103,7 @@ getTasksFromService(){
 		this.tasks = data['tasks'];
 		});
 	}
+// button events examples 
 	onButtonClick(): void {
 		console.log(`Click event is working`);
 	}
@@ -376,7 +377,7 @@ ng build --watch
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEwNTkxMjk3LDI2Nzc4MjE3MSwtMjAyND
-gyNDExMCwzMDA5NTE3NTcsLTc2NDU2MTk1NiwyMDUxNDM5MTU3
-XX0=
+eyJoaXN0b3J5IjpbMTY5MzU0MDc1MywyNjc3ODIxNzEsLTIwMj
+Q4MjQxMTAsMzAwOTUxNzU3LC03NjQ1NjE5NTYsMjA1MTQzOTE1
+N119
 -->
