@@ -67,15 +67,15 @@ console.log("listening on port 8000...")
 ```
 ##### create controller.js
 ```javascript
-const Task = require("./models");
+const  Task  =  require("./models");
 
-const bodyParser = require('body-parser');
+const  bodyParser  =  require('body-parser');
 
-var moment = require('moment');
+var  moment  =  require('moment');
 
   
 
-module.exports = {
+module.exports  = {
 
 // GET: Retrieve all Tasks
 
@@ -113,11 +113,11 @@ id: (req, res)=>{
 
 console.log("in Id route");
 
-console.log("[req.params.id](http://req.params.id/): ");
+console.log("req.params.id: ");
 
-console.log([req.params.id](http://req.params.id/));
+console.log(req.params.id);
 
-Task.findOne({_id: [req.params.id](http://req.params.id/)}, function(err, data){
+Task.findById({_id: req.params.id}, function(err, data){
 
 if(err){
 
@@ -147,21 +147,21 @@ create: (req, res)=>{
 
 console.log("in Create route");
 
-console.log("[req.params.id](http://req.params.id/): ");
+console.log("req.params.id: ");
 
-console.log([req.params.id](http://req.params.id/));
+console.log(req.params.id);
 
 console.log("req.body: ");
 
 console.log(req.body);
 
-req.body = {
+// req.body = {
 
-'title': "something",
+// 'title': "something",
 
-'description': "something else"
+// 'description': "something else"
 
-}
+// }
 
 Task.create(req.body, function(err, data){
 
@@ -193,15 +193,15 @@ update: (req, res)=>{
 
 console.log("in Update route");
 
-console.log("[req.params.id](http://req.params.id/): ");
+console.log("req.params.id: ");
 
-console.log([req.params.id](http://req.params.id/));
+console.log(req.params.id);
 
 console.log("req.body: ");
 
 console.log(req.body);
 
-Task.updateOne({_id: [req.params.id](http://req.params.id/)}, req.body, function(err, data){
+Task.findOneAndUpdate(req.params.id, req.body, function(err, data){
 
 if(err){
 
@@ -233,11 +233,11 @@ delete: (req, res)=>{
 
 console.log("in Delete route");
 
-console.log("[req.params.id](http://req.params.id/): ");
+console.log("req.params.id: ");
 
-console.log([req.params.id](http://req.params.id/));
+console.log(req.params.id);
 
-Task.remove({_id: [req.params.id](http://req.params.id/)}, function(err, data){
+Task.findByIdAndDelete({_id: req.params.id}, function(err, data){
 
 if(err){
 
@@ -275,7 +275,7 @@ Task.collection.drop();
 
   
 
-var task = [
+var  task  = [
 
 { 'title': "Think about stuff more thoroughly", 'description': "Too much stuff"},
 
@@ -293,7 +293,7 @@ Task.create(task, onInsert);
 
   
 
-function onInsert(err, docs) {
+function  onInsert(err, docs) {
 
 if (err) {
 
@@ -303,7 +303,7 @@ console.log(err);
 
 } else {
 
-[console.info](http://console.info/)('%d tasks were successfully stored.', docs.length);
+console.info('%d tasks were successfully stored.', docs.length);
 
 }
 
@@ -312,29 +312,6 @@ console.log(err);
 res.redirect('/');
 
 }
-
-}
-```
-##### create routes.js
-```javascript
-const controller = require("./controller");
-
-  
-
-module.exports = function(app){
-
-app.get('/', controller.home)
-
-app.post('/create/', controller.create)
-
-app.get('/get/:id/', [controller.id](http://controller.id/))
-
-app.put('/update/:id/', controller.update)
-// only use app.put with one schema if you have an embedded schema use app.patch
-
-app.delete('/destroy/:id/', controller.delete)
-
-app.post('/generate/', controller.generate)
 
 }
 ```
@@ -370,6 +347,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgyMDI1MjE0LC0zMzk2OTc5MDEsLTIwMD
-kzMDgzNjMsMjA0NjE3NDUxLDYxMTU4NDY1NF19
+eyJoaXN0b3J5IjpbNzE1MzUwNDY3LDc4MjAyNTIxNCwtMzM5Nj
+k3OTAxLC0yMDA5MzA4MzYzLDIwNDYxNzQ1MSw2MTE1ODQ2NTRd
+fQ==
 -->
