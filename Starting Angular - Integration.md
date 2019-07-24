@@ -43,11 +43,10 @@ import { HttpClient } from '@angular/common/http';
 	})
 
 export class HttpService {
-constructor(private _http: HttpClient){
 
-this.getTasks();
-
-}
+	constructor(private _http: HttpClient){
+		this.getTasks();
+	}
 
 getTasks(){
 
@@ -67,5 +66,5 @@ return this._http.get('/tasks');
 
 }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgwNTE5MDg1LDIwNTE0MzkxNTddfQ==
+eyJoaXN0b3J5IjpbLTIwNzMwMzAzNDksMjA1MTQzOTE1N119
 -->
