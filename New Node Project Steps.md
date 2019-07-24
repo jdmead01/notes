@@ -1,6 +1,15 @@
 
 ##  New Node Project
-```console
+
+ - [ ] Navigate to a folder you want to create your project
+ - [ ] create project using terminal 
+ ```terminal
+
+```
+ - [ ] 
+ - [ ] 
+ - [ ] List item
+
 mkdir {{project_name}}
 cd {{project_name}}
 mkdir static static/images static/css views
@@ -12,7 +21,6 @@ code .
 ```javascript
 /// if you're only using angular all you need is body parser express 
 const  express  =  require("express")
-
 const  bp  =  require("body-parser")
 const  path  =  require("path")
 const  session  =  require("express-session")
@@ -196,7 +204,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4ODI0NjA0Niw3MTUzNTA0NjcsNzgyMD
+eyJoaXN0b3J5IjpbMTg2NjYwMDI0MSw3MTUzNTA0NjcsNzgyMD
 I1MjE0LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUx
 LDYxMTU4NDY1NF19
 -->
