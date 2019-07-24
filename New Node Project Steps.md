@@ -14,45 +14,22 @@ code .
 const  express  =  require("express")
 
 const  bp  =  require("body-parser")
-
 const  path  =  require("path")
-
 const  session  =  require("express-session")
-
 const  flash  =  require("express-flash")
-
 var  app  =  express()
-
-  
-
 app.use(bp.json());
-
 app.use(express.static( __dirname +  '/public/dist/public' ));
-
 app.use(session({
-
 secret: 'quotes',
-
 resave: false,
-
 saveUninitialized: true,
-
 cookie: { maxAge: 60000 }
-
 }))
-
 app.use(flash())
-
-  
-
 app.set('views', path.join(__dirname, './views'))
-
 app.set('view engine', 'ejs')
-
 require('./routes')(app)
-
-  
-
 app.listen(8000, (err)=>{
 
 if (err){
@@ -172,13 +149,14 @@ module.exports  = {
 		];
 		
 Task.create(task, onInsert);
+
 function  onInsert(err, docs) {
-if (err) {
-console.log("error: ");
-console.log(err);
-} else {
-console.info('%d tasks were successfully stored.', docs.length);
-}
+	if (err) {
+		console.log("error: ");
+		console.log(err);
+	}else {
+		console.info('%d tasks were successfully stored.', docs.length);
+	}
 }
 res.redirect('/');
 }
@@ -218,7 +196,7 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkxNjk2MzgwLDcxNTM1MDQ2Nyw3ODIwMj
-UyMTQsLTMzOTY5NzkwMSwtMjAwOTMwODM2MywyMDQ2MTc0NTEs
-NjExNTg0NjU0XX0=
+eyJoaXN0b3J5IjpbMjA4ODI0NjA0Niw3MTUzNTA0NjcsNzgyMD
+I1MjE0LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUx
+LDYxMTU4NDY1NF19
 -->
