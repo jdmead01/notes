@@ -50,15 +50,15 @@ export class HttpService {
 
 getTasks(){
 
-// // our http response is an Observable, store it in a variable
+	// // our http response is an Observable, store it in a variable
 
-// let tempObservable = this._http.get('/tasks');
+	// let tempObservable = this._http.get('/tasks');
 
-// // subscribe to the Observable and provide the code we would like to do with our data from the response
+	// // subscribe to the Observable and provide the code we would like to do with our data from the response
 
-// tempObservable.subscribe(data => console.log("Got our tasks!", data));
+	// tempObservable.subscribe(data => console.log("Got our tasks!", data));
 
-return this._http.get('/tasks');
+	return this._http.get('/tasks');
 
 }
 
@@ -66,5 +66,5 @@ return this._http.get('/tasks');
 
 }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzMwMzAzNDksMjA1MTQzOTE1N119
+eyJoaXN0b3J5IjpbLTk4OTEzMTU1NywyMDUxNDM5MTU3XX0=
 -->
