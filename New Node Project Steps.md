@@ -181,7 +181,9 @@ const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/task_db');
 var FeaturesSchema = new mongoose.Schema({
-	feature: {tyoe
+	feature: {type: String, required: true, minlength: 5},
+	completed: { type: Boolean, default: false}
+	}
 var WidgetSchema = new mongoose.Schema({
 	title: { type: String, required: true, minlength: 2},
 	description: { type: String, maxlength: 255, default: ""},
@@ -213,8 +215,8 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY1MTkyMDcwLC0xNzg2NDkwNjg4LDEyNT
-g3NDgyMzEsLTI5NTY1NzkyNyw3MTUzNTA0NjcsNzgyMDI1MjE0
-LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUxLDYxMT
-U4NDY1NF19
+eyJoaXN0b3J5IjpbLTEzMzA1NzU0NDMsLTE3ODY0OTA2ODgsMT
+I1ODc0ODIzMSwtMjk1NjU3OTI3LDcxNTM1MDQ2Nyw3ODIwMjUy
+MTQsLTMzOTY5NzkwMSwtMjAwOTMwODM2MywyMDQ2MTc0NTEsNj
+ExNTg0NjU0XX0=
 -->
