@@ -173,6 +173,9 @@ res.redirect('/');
 ```
 
 ##### models.js
+Take a look at the provided wireframe and outline what you need in order to make your database work properly within the scope of the project. 
+
+If you identify more than one model (1 to many relationship ensure the database that is nested within the main model
 ```javascript
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
@@ -209,7 +212,8 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODY0OTA2ODgsMTI1ODc0ODIzMSwtMj
-k1NjU3OTI3LDcxNTM1MDQ2Nyw3ODIwMjUyMTQsLTMzOTY5Nzkw
-MSwtMjAwOTMwODM2MywyMDQ2MTc0NTEsNjExNTg0NjU0XX0=
+eyJoaXN0b3J5IjpbNzY2NTQ0MDYzLC0xNzg2NDkwNjg4LDEyNT
+g3NDgyMzEsLTI5NTY1NzkyNyw3MTUzNTA0NjcsNzgyMDI1MjE0
+LC0zMzk2OTc5MDEsLTIwMDkzMDgzNjMsMjA0NjE3NDUxLDYxMT
+U4NDY1NF19
 -->
