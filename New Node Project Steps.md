@@ -218,6 +218,31 @@ navigate to the project root folder
 ```Terminal
 nodemon server.js
 ```
+Some errors experienced
+```errors
+/Users/jdmead/Library/Mobile Documents/com~apple~CloudDocs/Coding Dojo/M.E.A.N/belt_exam/routes.js:12
+app.all("*", (req,res,next) => {
+^
+
+ReferenceError: app is not defined
+    at Object.<anonymous> (/Users/jdmead/Library/Mobile Documents/com~apple~CloudDocs/Coding Dojo/M.E.A.N/belt_exam/routes.js:12:1)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/jdmead/Library/Mobile Documents/com~apple~CloudDocs/Coding Dojo/M.E.A.N/belt_exam/server.js:21:1)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[nodemon] app crashed - waiting for file changes before starting...
+```
 **Use Postman To check if the routes work**
 
  - app.get('/api/widgets', controller.widgets)
@@ -239,9 +264,10 @@ nodemon server.js
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU3MTkxNzk1LC0xMjYwNjA5ODQwLDExOT
-M3ODMwNTIsOTY3NDMxOTk2LC0yMDg3MjE3OTgyLC0xNjUwMzIz
-NDYwLC0xNzg2NDkwNjg4LDEyNTg3NDgyMzEsLTI5NTY1NzkyNy
-w3MTUzNTA0NjcsNzgyMDI1MjE0LC0zMzk2OTc5MDEsLTIwMDkz
-MDgzNjMsMjA0NjE3NDUxLDYxMTU4NDY1NF19
+eyJoaXN0b3J5IjpbLTQyMzYyNzE2NCw2NTcxOTE3OTUsLTEyNj
+A2MDk4NDAsMTE5Mzc4MzA1Miw5Njc0MzE5OTYsLTIwODcyMTc5
+ODIsLTE2NTAzMjM0NjAsLTE3ODY0OTA2ODgsMTI1ODc0ODIzMS
+wtMjk1NjU3OTI3LDcxNTM1MDQ2Nyw3ODIwMjUyMTQsLTMzOTY5
+NzkwMSwtMjAwOTMwODM2MywyMDQ2MTc0NTEsNjExNTg0NjU0XX
+0=
 -->
