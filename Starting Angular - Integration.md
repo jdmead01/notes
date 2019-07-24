@@ -103,24 +103,26 @@ getTasksFromService(){
 		// In this example, the array of tasks is assigned to the key 'tasks' in the data object.
 		// This may be different for you, depending on how you set up your Task API.
 		this.tasks = data['tasks'];
-	});
-}
-
-onButtonClick(): void {
-	console.log(`Click event is working`);
-}
-
-onButtonClickParam(num: Number): void {
-	console.log(`Click event is working with num param: ${num}`);
-}
-onButtonClickParams(num: Number, str: String): void {
-	console.log(`Click event is working with num param: ${num} and str param: ${str}`);
-}
-onButtonClickEvent(event: any): void {
-	console.log(`Click event is working with event: ${event}`);
+		});
 	}
+	onButtonClick(): void {
+		console.log(`Click event is working`);
+	}
+	onButtonClickParam(num: Number): void {
+		console.log(`Click event is working with num param: ${num}`);
+	}
+	onButtonClickParams(num: Number, str: String): void {
+		console.log(`Click event is working with num param: ${num} and str param: ${str}`);
+	}
+	onButtonClickEvent(event: any): void {
+		console.log(`Click event is working with event: ${event}`);
+		}
 }
+```
+**app.component.ts**
+```javascript
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzAwNzU4NzksLTc2NDU2MTk1NiwyMD
-UxNDM5MTU3XX0=
+eyJoaXN0b3J5IjpbMTQ3NTM4ODc3MywtNzY0NTYxOTU2LDIwNT
+E0MzkxNTddfQ==
 -->
