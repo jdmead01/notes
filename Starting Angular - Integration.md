@@ -348,28 +348,28 @@ table  td::before {
 * aria-label has no advantage, it won't be read inside a table
 content: attr(aria-label);
 */
-content: attr(data-label);
-float: left;
-font-weight: bold;
-text-transform: uppercase;
+	content: attr(data-label);
+	float: left;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 table  td:last-child {
-border-bottom: 0;
+	border-bottom: 0;
 }
 
 }
 ```
-** Run Mongo DB **
+**Run Mongo DB**
 ```terminal
 sudo mongod
 mongo
 ```
-**Run Node **
+**Run Node**
 navigate to the root of the project where server.js lives 
 ```terminal 
 nodemon server.js
 ```
-** Run Angular Server  **
+**Run Angular Server**
 ```text
 Navigate to the angular folder 'public'
 ```
@@ -378,6 +378,6 @@ ng build --watch
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYwNTc5NjYxLC0yMDI0ODI0MTEwLDMwMD
-k1MTc1NywtNzY0NTYxOTU2LDIwNTE0MzkxNTddfQ==
+eyJoaXN0b3J5IjpbMTkxNjIzMTkwNywtMjAyNDgyNDExMCwzMD
+A5NTE3NTcsLTc2NDU2MTk1NiwyMDUxNDM5MTU3XX0=
 -->
