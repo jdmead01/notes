@@ -150,14 +150,14 @@ module.exports  = {
 		// Pandas.collection.drop()
 		Task.collection.drop();
 		
-		var  task  = [
+		var  temp_data  = [
 			{ 'title': "Think about stuff more thoroughly", 'description': "Too much stuff"},
 			{ 'title': "Deck of Cards", 'description': "Building methods"},
 			{ 'title': "Coding in Angular", 'description': "Wheeeeeeeee"},
 			{ 'title': "White Boarding MergeSort", 'description': "Now that is Fun!"}
 		];
 		
-Task.create(task, onInsert);
+Task.create(temp_data, onInsert);
 
 function  onInsert(err, docs) {
 	if (err) {
@@ -218,8 +218,8 @@ mongo
 └── views
     └── index.ejs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODcyMTc5ODIsLTE2NTAzMjM0NjAsLT
-E3ODY0OTA2ODgsMTI1ODc0ODIzMSwtMjk1NjU3OTI3LDcxNTM1
-MDQ2Nyw3ODIwMjUyMTQsLTMzOTY5NzkwMSwtMjAwOTMwODM2My
-wyMDQ2MTc0NTEsNjExNTg0NjU0XX0=
+eyJoaXN0b3J5IjpbLTg1MTc0MzEyMiwtMjA4NzIxNzk4MiwtMT
+Y1MDMyMzQ2MCwtMTc4NjQ5MDY4OCwxMjU4NzQ4MjMxLC0yOTU2
+NTc5MjcsNzE1MzUwNDY3LDc4MjAyNTIxNCwtMzM5Njk3OTAxLC
+0yMDA5MzA4MzYzLDIwNDYxNzQ1MSw2MTE1ODQ2NTRdfQ==
 -->
